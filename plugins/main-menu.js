@@ -247,7 +247,7 @@ const fkontak = {
 	},
 	"message": {
 		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:lynx;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 		}
 	},
 	"participant": "0@s.whatsapp.net"
@@ -263,7 +263,7 @@ const ftroli = {
     status: 1,
     surface : 1,
     message: `Hai Kak ${name}!`, 
-    orderTitle: `▮Menu ▸`,
+    orderTitle: `▮Menu❦~ ▸`,
     thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
@@ -302,7 +302,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
         listMessage: {
             title: `${ucapan()} ${name}`,
             description: menuu,
-            buttonText: 'LIST MENU',
+            buttonText: 'LIST MENU❦~',
             listType: 1,
             footerText: "𝚂𝙸𝙻𝙰𝙷𝙺𝙰𝙽 𝙿𝙸𝙻𝙸𝙷 𝙼𝙴𝙽𝚄 𝙳𝙸 𝙱𝙰𝚆𝙰𝙷",
             mtype: 'listMessage',
@@ -528,8 +528,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
                {
              quickReplyButton: {
-               displayText: 'Donasi',
-               id: '.donasi',
+               displayText: 'ping',
+               id: '.ping',
              }
 
            },
